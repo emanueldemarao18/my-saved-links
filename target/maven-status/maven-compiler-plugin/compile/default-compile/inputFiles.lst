@@ -1,0 +1,14 @@
+/Users/ctw03631/my-saved-links/src/main/java/com/github/emanuel/api/dto/request/LinkRequestDTO.java
+/Users/ctw03631/my-saved-links/src/main/java/com/github/emanuel/api/dto/request/PanelRequestDTO.java
+/Users/ctw03631/my-saved-links/src/main/java/com/github/emanuel/api/dto/response/LinkResponseDTO.java
+/Users/ctw03631/my-saved-links/src/main/java/com/github/emanuel/api/dto/response/PanelResponseDTO.java
+/Users/ctw03631/my-saved-links/src/main/java/com/github/emanuel/api/resource/LinkResource.java
+/Users/ctw03631/my-saved-links/src/main/java/com/github/emanuel/api/resource/PanelResource.java
+/Users/ctw03631/my-saved-links/src/main/java/com/github/emanuel/application/mapper/LinkMapper.java
+/Users/ctw03631/my-saved-links/src/main/java/com/github/emanuel/application/mapper/PanelMapper.java
+/Users/ctw03631/my-saved-links/src/main/java/com/github/emanuel/application/service/LinkService.java
+/Users/ctw03631/my-saved-links/src/main/java/com/github/emanuel/application/service/PanelService.java
+/Users/ctw03631/my-saved-links/src/main/java/com/github/emanuel/infrastructure/entity/Link.java
+/Users/ctw03631/my-saved-links/src/main/java/com/github/emanuel/infrastructure/entity/Panel.java
+/Users/ctw03631/my-saved-links/src/main/java/com/github/emanuel/infrastructure/repository/LinkRepository.java
+/Users/ctw03631/my-saved-links/src/main/java/com/github/emanuel/infrastructure/repository/PanelRepository.java
