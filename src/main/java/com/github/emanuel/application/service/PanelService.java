@@ -1,12 +1,9 @@
 package com.github.emanuel.application.service;
 
-import com.github.emanuel.api.dto.request.LinkRequestDTO;
 import com.github.emanuel.api.dto.request.PanelRequestDTO;
-import com.github.emanuel.api.dto.request.PanelUpdateRequestDTO;
 import com.github.emanuel.api.dto.response.PanelResponseDTO;
 import com.github.emanuel.api.dto.response.PanelUpdateResponseDTO;
 import com.github.emanuel.application.mapper.PanelMapper;
-import com.github.emanuel.infrastructure.entity.Link;
 import com.github.emanuel.infrastructure.entity.Panel;
 import com.github.emanuel.infrastructure.repository.PanelRepository;
 import jakarta.enterprise.context.ApplicationScoped;
@@ -16,7 +13,6 @@ import jakarta.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 @ApplicationScoped
 public class PanelService {
@@ -52,11 +48,11 @@ public class PanelService {
     }
 
     @Transactional
-    public Optional<PanelUpdateResponseDTO> update(Long id, PanelUpdateRequestDTO panelUpdateRequestDTO) {
+    public Optional<PanelUpdateResponseDTO> update(Long id, PanelRequestDTO panelRequestDTO) {
         Panel existingPanel = panelRepository.findById(id);
         if (existingPanel != null) {
-            existingPanel.setTitle(panelUpdateRequestDTO.title());
-            existingPanel.setIcon(panelUpdateRequestDTO.icon());
+            existingPanel.setTitle(panelRequestDTO.title());
+            existingPanel.setIcon(panelRequestDTO.icon());
 
            /* existingPanel.getLinks().clear();
 

@@ -1,7 +1,6 @@
 package com.github.emanuel.api.resource;
 
 import com.github.emanuel.api.dto.request.PanelRequestDTO;
-import com.github.emanuel.api.dto.request.PanelUpdateRequestDTO;
 import com.github.emanuel.api.dto.response.PanelResponseDTO;
 import com.github.emanuel.application.service.PanelService;
 import jakarta.ws.rs.Consumes;
@@ -51,8 +50,8 @@ public class PanelResource {
 
     @PUT
     @Path("/{id}")
-    public Response update(@PathParam("id") Long id, PanelUpdateRequestDTO panelUpdateRequestDTO) {
-        return panelService.update(id, panelUpdateRequestDTO)
+    public Response update(@PathParam("id") Long id, PanelRequestDTO panelRequestDTO) {
+        return panelService.update(id, panelRequestDTO)
                 .map(Response::ok)
                 .orElse(Response.status(Response.Status.NOT_FOUND))
                 .build();
