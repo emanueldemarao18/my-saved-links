@@ -1,0 +1,23 @@
+
+.idea/
+
+
+*.iml
+out/
+
+
+*.log
+*.swp
+
+
+node_modules/
+
+.DS_Store           # macOS
+Thumbs.db           # Windows
+
+
+/build/
+dist/
+
+*.bak               # Arquivos de backup
+*.tmp               # Arquivos temporários
