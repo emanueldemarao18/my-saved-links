@@ -28,6 +28,7 @@ public class Panel {
     @JsonIgnore
     private List<Link> links;
 
+
     public Panel() {
 
     }
