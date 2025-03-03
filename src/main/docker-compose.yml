@@ -1,0 +1,27 @@
+
+services:
+  db:
+    container_name: my_saved_links_db
+    image: postgres:latest
+    ports:
+      - "5440:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=my-saved-links
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
+
+
+
+#  docker run -d \
+# --name my_saved_links_db \
+#  -e POSTGRES_USER=postgres \
+#  -e POSTGRES_PASSWORD=postgres \
+#  -e POSTGRES_DB=my-saved-links \
+#  -p 5440:5432 \
+#  -v postgres_data:/var/lib/postgresql/data \
+#  postgres:latest
